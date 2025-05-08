@@ -2,7 +2,7 @@ package language;
 
 import java.util.Scanner;
 
-public class sswtich {
+public class swtich {
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter operation (+, -, *, /): ");
