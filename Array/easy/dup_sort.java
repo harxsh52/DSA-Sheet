@@ -1,4 +1,4 @@
-package Array;
+package Array.easy;
 
 public class dup_sort {
     public int removeDuplicates(int[] nums) {

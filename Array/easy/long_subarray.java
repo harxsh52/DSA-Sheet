@@ -1,4 +1,4 @@
-package Array;
+package Array.easy;
 
 public class long_subarray {
     // Java program to find the length of the longest

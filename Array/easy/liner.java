@@ -1,4 +1,4 @@
-package Array;
+package Array.easy;
 
 public class liner {
     public int linearSearch(int nums[], int target) {
