@@ -1,4 +1,4 @@
-package Pattern;
+package language.Pattern;
 public class tweentitwo {
     public static void main(String[] args) {
         int n = 4;

@@ -1,4 +1,4 @@
-package Math;
+package language.Math;
 
 public class gcd {
     public static void main(String[] args) {

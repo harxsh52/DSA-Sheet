@@ -1,4 +1,4 @@
-package Pattern;
+package language.Pattern;
 
 public class eigth {
     public static void main(String[] args) {

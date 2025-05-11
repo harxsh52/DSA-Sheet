@@ -1,4 +1,4 @@
-package Recursion;
+package language.Recursion;
 
 public class reverse_array {
     public static void reverseArray(int[] arr) {

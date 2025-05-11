@@ -1,4 +1,4 @@
-package Recursion;
+package language.Recursion;
 
     public class Fibonacci {
         public static int fibonacci(int n) {

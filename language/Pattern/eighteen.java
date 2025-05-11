@@ -1,4 +1,4 @@
-package Pattern;
+package language.Pattern;
 
 public class eighteen {
     public static void main(String[] args) {

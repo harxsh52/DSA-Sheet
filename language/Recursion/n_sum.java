@@ -1,4 +1,4 @@
-package Recursion;
+package language.Recursion;
 
 public class n_sum {
         public static int NnumbersSum(int N) {

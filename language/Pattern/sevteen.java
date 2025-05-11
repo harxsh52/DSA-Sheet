@@ -1,4 +1,4 @@
-package Pattern;
+package language.Pattern;
 public class sevteen {
     public static void main(String[] args) {
         int n = 4; // Number of rows

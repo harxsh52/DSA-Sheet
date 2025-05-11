@@ -1,4 +1,4 @@
-package Recursion;
+package language.Recursion;
 
 public class ValidPlaindrome {
     public static boolean isPalindrome(String s) {

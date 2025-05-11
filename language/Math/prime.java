@@ -1,4 +1,4 @@
-package Math;
+package language.Math;
 
 public class prime {
     public static void main(String[] args) {
