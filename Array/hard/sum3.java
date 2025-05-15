@@ -1,8 +1,9 @@
 package Array.hard;
+import java.util.*;
 
 public class sum3 {
         public List<List<Integer>> threeSum(int[] nums) {
-    List<List<Integer>> result=new ArrayList<>();
+    Set<List<Integer>> result=new HashSet<>();
         Arrays.sort(nums);
         for(int i=0;i<nums.length-2;i++){
             int left=i+1;
