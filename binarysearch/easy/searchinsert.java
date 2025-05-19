@@ -1,4 +1,4 @@
-package binarysearch;
+package binarysearch.easy;
 
 public class searchinsert {
     public int searchInsert(int[] nums, int target) {

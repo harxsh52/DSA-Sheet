@@ -1,4 +1,4 @@
-package binarysearch;
+package binarysearch.easy;
 
 public class lowerbound {
     public int lowerBound(int[] nums, int x) {

@@ -1,6 +1,6 @@
-package binarysearch;
+package binarysearch.easy;
 
-public class min_rotate {
+public class rotate_time {
     class Solution {
     public int findMin(int[] nums) {
         int low=0;
@@ -18,7 +18,7 @@ public class min_rotate {
     }
 }
     public static void main(String[] args) {
-        Solution solution = new min_rotate().new Solution();
+        Solution solution = new rotate_time().new Solution();
         int[] nums = {3, 4, 5, 1, 2};
         System.out.println(solution.findMin(nums)); // Output: 1
     }

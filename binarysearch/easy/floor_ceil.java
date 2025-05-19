@@ -1,4 +1,4 @@
-package binarysearch;
+package binarysearch.easy;
 import java.util.Arrays;
 // Problem: Given an array of integers and a target integer x, find the floor and ceil of x in the array.
 

@@ -1,4 +1,4 @@
-package binarysearch;
+package binarysearch.easy;
 
 public class upperbound {
     public int upperBound(int[] nums, int x) {

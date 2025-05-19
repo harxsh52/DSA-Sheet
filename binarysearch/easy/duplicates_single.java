@@ -1,4 +1,4 @@
-package binarysearch;
+package binarysearch.easy;
 
 public class duplicates_single {
     public int singleNonDuplicate(int[] nums) {
