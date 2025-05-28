@@ -2,18 +2,27 @@ package Array.easy;
 
 public class rotatearray {
     public void rotate(int[] nums, int k) {
-        k=k%nums.length;
-        reverse(nums,0,nums.length-1);
-        reverse(nums,0,k-1);
-        reverse(nums,k,nums.length-1);
+        int n = nums.length;
+        k = k % n; // Handle cases where k > n
+
+        // Reverse entire array
+        reverse(nums, 0, n - 1);
+
+        // Reverse first k elements
+        reverse(nums, 0, k - 1);
+
+        // Reverse remaining n-k elements
+        reverse(nums, k, n - 1);
     }
-    public void reverse(int[] nums,int i,int e){
-        while(i<=e){
-            int temp=nums[i];
-            nums[i]=nums[e];
-            nums[e]=temp;
-            i++;
-            e--;
+
+    public static void reverse(int[] nums, int left, int right) {
+        while (left < right) {
+            nums[left] = nums[left] ^ nums[right];
+            nums[right] = nums[left] ^ nums[right];
+            nums[left] = nums[left] ^ nums[right];
+            left++;
+            right--;
         }
+    }
 }
-}
+
