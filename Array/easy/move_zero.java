@@ -1,18 +1,18 @@
 package Array.easy;
 
 public class move_zero {
-    public void moveZeroes(int[] nums) {
-        if(nums.length==1) return;
-        int i=0;
-        for(int num:nums){
-            if(num!=0){
-            nums[i++]=num;
+     public void moveZeroes(int[] nums) {
+        int count=0,q=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==0){
+                count++;
+            }else{
+                nums[q]=nums[i];
+                q++;
+            }
         }
+        for(int i=q;i<nums.length;i++){
+            nums[i]=0;
         }
-        for(int t=i;t<nums.length;t++){
-            nums[t]=0;
-        }
-        
-        return;
     }
 }
