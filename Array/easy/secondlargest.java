@@ -1,20 +1,24 @@
 package Array.easy;
 
 public class secondlargest {
-    public int secondLargestElement(int[] nums) {
-        int max1 = Integer.MIN_VALUE;
-        int max2 = Integer.MIN_VALUE;
-
-        for (int num : nums) {
-            if (num > max1) {
-                max2 = max1;
-                max1 = num;
-            } else if (num > max2 && num != max1) {
-                max2 = num;
+    public int getSecondLargest(int[] arr) {
+        // code here
+        if (arr.length < 2) {
+            return -1; // or throw an exception
+        }
+        int first = Integer.MIN_VALUE;
+        int second = Integer.MIN_VALUE;
+        for (int num : arr) {
+            if (num > first) {
+                second = first;
+                first = num;
+            } else if (num > second && num != first) {
+                second = num;
             }
         }
-
-        // If no valid second largest exists
-        return (max2 == Integer.MIN_VALUE) ? -1 : max2;
+        if(second!=Integer.MIN_VALUE){
+            return second;
+        }
+        return -1;
     }
 }
