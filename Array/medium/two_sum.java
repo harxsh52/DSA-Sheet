@@ -4,14 +4,15 @@ import java.util.HashMap;
 
 public class two_sum {
     public int[] twoSum(int[] nums, int target) {
-        HashMap<Integer,Integer> sum=new HashMap<>();
+        HashMap<Integer,Integer> result=new HashMap<>();
         for(int i=0;i<nums.length;i++){
-            int comp=target-nums[i];
-            if(sum.containsKey(comp)){
-                return new int[] {sum.get(comp),i};
+            if(result.containsKey(target-nums[i])){
+                return new int[] {result.get(target-nums[i]),i};
             }
-            sum.put(nums[i],i);
+            else{
+                result.put(nums[i],i);
+            }
         }
-        return new int[] {};
+        return new int[] {-1,-1};
     }
 }
