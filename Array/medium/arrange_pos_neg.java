@@ -2,21 +2,20 @@ package Array.medium;
 
 public class arrange_pos_neg {
     public int[] rearrangeArray(int[] nums) {
-        int[] arr=new int[nums.length];
-        int i=0;
-        int j=1;
-        for(int num:nums){
-            if(num>=0){
-                arr[i]=num;
-                i+=2;
+        int[] ans = new int[nums.length];
+        int pos = 0, neg = 1;
+        
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > 0) {
+                ans[pos] = nums[i];
+                pos += 2;
+            } else {
+                ans[neg] = nums[i];
+                neg += 2;
             }
-            else{
-                arr[j]=num;
-                j+=2;
-            }
-
         }
+        
+        return ans;
+    }
+}
 
-        return arr;
-}
-}

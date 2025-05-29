@@ -2,10 +2,10 @@ package Array.medium;
 
 public class stock_sell {
     public int maxProfit(int[] prices) {
+        int min=Integer.MAX_VALUE;
         int max=0;
-        int min=prices[0];
         for(int num:prices){
-            if(num<min){
+            if(min>num){
                 min=num;
             }
             max=Math.max(max,num-min);
