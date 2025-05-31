@@ -4,7 +4,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class divisor {
-    public int[] divisors(int n) {
+    public static int[] divisors(int n) {
         Set<Integer> result=new TreeSet<>();
         for(int i=1;i<=Math.sqrt(n);i++){
             if(n%i == 0){
