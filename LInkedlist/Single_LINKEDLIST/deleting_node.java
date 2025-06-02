@@ -1,4 +1,4 @@
-package LInkedlist.easy;
+package LInkedlist.Single_LINKEDLIST;
 public class deleting_node {
     public static void main(String[] args) {
         // Example usage
