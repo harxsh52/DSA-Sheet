@@ -9,6 +9,16 @@ public class fibonacci {
         }
         return fibo(n-1)+fibo(n-2);
     }
+    public static boolean ischeck(int[] arr,int i){
+        if(arr.length-1==i){
+            return true;
+        }
+        if(arr[i]>arr[i+1]){
+            return false;
+        }
+        return ischeck(arr,i+1);
+
+    }
     public static void main(String[] args) {
         int t=fibo(4);
         System.out.println(t);
