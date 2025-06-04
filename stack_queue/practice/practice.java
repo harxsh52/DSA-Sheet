@@ -2,6 +2,30 @@ package stack_queue.practice;
 import java.util.*;
 
 public class practice {
+    //Function for Dulicates Parentheses
+    
+    public static boolean hasDuplicateParentheses(String expression){
+        Stack<Character> stack=new Stack<>();
+        for(char c: expression.toCharArray()){
+            if(c==')'){
+                char top=stack.peek();
+                stack.pop();
+                if(top=='('){
+                    return true; // Found duplicate parentheses
+                }
+                else{
+                    while(!stack.isEmpty() && top!='('){
+                        top=stack.peek();
+                        stack.pop();
+                    }
+                }
+            }else{
+                    stack.push(c); // Push the current character onto the stack
+                }
+            }
+            return false; // No duplicate parentheses found
+        }
+
 
     //Stack valid parentheses
     public static boolean isValid(String s) {
@@ -103,5 +127,6 @@ public class practice {
         nextGreaterElement(arr);
         isValid("()[]{}"); // Example usage of isValid
         System.out.println("Is valid parentheses: " + isValid("()[]{"));
+        System.out.println("Is valid parentheses: " + hasDuplicateParentheses("((a+b)"));
     }
 }
