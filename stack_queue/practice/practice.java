@@ -2,8 +2,30 @@ package stack_queue.practice;
 import java.util.*;
 
 public class practice {
+    //Max histogram area 
+    public static int maxHistogramArea(int[] arr) {
+        int n = arr.length;
+        Stack<Integer> stack = new Stack<>();
+        int maxArea = 0;
+        int i = 0;
+        while (i < n) {
+            if (stack.isEmpty() || arr[stack.peek()] <= arr[i]) {
+                stack.push(i++);
+            } else {
+                int top = stack.pop();
+                int area = arr[top] * (stack.isEmpty() ? i : i - stack.peek() - 1);
+                maxArea = Math.max(maxArea, area);
+            }
+        }
+        while (!stack.isEmpty()) {
+            int top = stack.pop();
+            int area = arr[top] * (stack.isEmpty() ? i : i - stack.peek() - 1);
+            maxArea = Math.max(maxArea, area);
+        }
+        return maxArea;
+    }
+
     //Function for Dulicates Parentheses
-    
     public static boolean hasDuplicateParentheses(String expression){
         Stack<Character> stack=new Stack<>();
         for(char c: expression.toCharArray()){
