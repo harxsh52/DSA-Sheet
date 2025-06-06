@@ -1,4 +1,4 @@
-package Recursion.practice.backtracking;
+package Recursion.backtracking;
 
 public class subset {
     public static void subset(String s,int i,int j){
