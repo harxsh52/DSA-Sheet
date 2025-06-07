@@ -1,9 +1,9 @@
-package practice.revision.recursion.Pick_notPick;
+package Recursion.medium;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class subset {
+public class powset {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result=new ArrayList<>();
         genrate(nums,0,result,new ArrayList<>());
