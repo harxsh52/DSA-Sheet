@@ -1,4 +1,4 @@
-package practice;
+package Recursion.medium;
 
 import java.util.ArrayList;
 import java.util.List;
