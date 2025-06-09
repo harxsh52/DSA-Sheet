@@ -1,43 +1,39 @@
-package stack_queue.practice;
+package stackqueue.practice;
 
 public class stack_linkedlist {
-    static class Node {
+    static class ListNode{
         int data;
-        Node next;
+        ListNode next;
 
-        Node(int data) {
-            this.data = data;
-            this.next = null;
+        ListNode(int data){
+            this.data=data;
+            this.next=null;
         }
     }
+    static class Stack{
+        private ListNode head;
 
-    static class Stack {
-        private Node top;
-
-        public Stack() {
-            top = null;
+        public Stack(){
+            head=null;
         }
-
-        public void push(int value) {
-            Node newNode = new Node(value);
-            newNode.next = top;
-            top = newNode;
+        public void push(int value){
+            ListNode newNode=new ListNode(value);
+            newNode.next=head;
+            head=newNode;
         }
-
-        public int pop() {
-            if (top == null) {
+        public int pop(){
+            if(head==null){
                 throw new EmptyStackException();
             }
-            int value = top.data;
-            top = top.next;
+            int value=head.data;
+            head=head.next;
             return value;
         }
-
-        public int peek() {
-            if (top == null) {
+        public int peek(){
+            if(head==null){
                 throw new EmptyStackException();
             }
-            return top.data;
+            return head.data;
         }
     }
     public static void main(String[] args) {
@@ -52,5 +48,5 @@ public class stack_linkedlist {
         public EmptyStackException() {
             super("Stack is empty");
         }
-    
-}}
+    }
+}
