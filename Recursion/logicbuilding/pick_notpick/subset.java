@@ -14,7 +14,10 @@ public class subset {
             sq.add(new ArrayList<>(s));
             return;
         }
+        //not pick
         genrate(sq,index+1,s,nums);
+
+        //pick
         s.add(nums[index]);
         genrate(sq,index+1,s,nums);
         s.remove(s.size()-1);
