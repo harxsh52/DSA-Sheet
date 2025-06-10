@@ -1,4 +1,4 @@
-package stackqueue.practice;
+package stackqueue.stack.practice;
 import java.util.*;
 public class stockspan {
     public static void stockspan(int stock[],int[] arr){

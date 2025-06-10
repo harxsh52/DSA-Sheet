@@ -1,4 +1,4 @@
-package stackqueue.practice;
+package stackqueue.stack.practice;
 
 public class stack_linkedlist {
     static class ListNode{
