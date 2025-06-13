@@ -9,7 +9,7 @@ public class nextgreaterelementII {
         int[] arr=new int[nums.length];
         Arrays.fill(arr,-1);
         Stack<Integer> s=new Stack<>();
-        for(int i=0;i<2*(nums.length)-1;i++){
+        for(int i=0;i<2*(nums.length);i++){
             int t=i%nums.length;
             while(!s.isEmpty() && nums[t]>nums[s.peek()]){
                 int index=s.pop();
