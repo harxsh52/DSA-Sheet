@@ -4,6 +4,7 @@ public class beauty {
     public static int beautySum(String s) {
         // code here
          int sum = 0;
+         int r=0;
         
         for (int i = 0; i < s.length(); ++i) {
             int[] charCount = new int[26]; // initialize charCount to all 0
