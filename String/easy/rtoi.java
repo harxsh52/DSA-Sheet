@@ -1,7 +1,6 @@
 package String.easy;
 
 public class rtoi {
-    lass Solution {
     public int romanToInt(String s) {
         int total = 0;
         int prev = 0;
@@ -32,5 +31,5 @@ public class rtoi {
             case 'M': return 1000;
             default: return 0;
         }
-    }
-}
+    }}
+
