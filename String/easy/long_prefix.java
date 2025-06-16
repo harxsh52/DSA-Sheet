@@ -1,14 +1,19 @@
 package String.easy;
 
+import java.util.Arrays;
+
 public class long_prefix {
-    public String longestCommonPrefix(String[] strs) {
-        String prev = strs[0];
-        for (int i=0; i<strs.length; i++) {
-            while (strs[i].indexOf(prev)!=0) {
-                prev = prev.substring(0, prev.length()-1);
+    public String longestCommonPrefix(String[] v) {
+        StringBuilder ans = new StringBuilder();
+        Arrays.sort(v);
+        String first = v[0];
+        String last = v[v.length-1];
+        for (int i=0; i<Math.min(first.length(), last.length()); i++) {
+            if (first.charAt(i) != last.charAt(i)) {
+                return ans.toString();
             }
-            
+            ans.append(first.charAt(i));
         }
-        return prev;
+        return ans.toString();
     }
 }
