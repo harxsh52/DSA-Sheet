@@ -1,26 +1,38 @@
 package Greedy;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class minimumcoin {
+
     static List<Integer> minPartition(int n) {
-        // code here
-        int[] arr= { 1, 2, 5, 10, 20, 50, 100, 200, 500, 2000 };
-        
-        List<Integer> result=new ArrayList<>();
-        while(n>0){
-            int max=0;
-            for(int i=0;i<arr.length;i++){
-                if(n<arr[i]){
-                    break;
-                }else{
-                    max=arr[i];
-                }
+        int[] arr = {1, 2, 5, 10, 20, 50, 100, 500, 200};  // Custom denominations
+
+        // Sort the coin array in descending order for greedy selection
+        List<Integer> coins = new ArrayList<>();
+        for (int coin : arr) {
+            coins.add(coin);
+        }
+        Collections.sort(coins, Collections.reverseOrder());
+
+        List<Integer> result = new ArrayList<>();
+        for (int coin : coins) {
+            while (n >= coin) {
+                result.add(coin);
+                n -= coin;
             }
-            result.add(max);
-            n-=max;
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        int amount = 1059;
+
+        List<Integer> coinsUsed = minPartition(amount);
+        System.out.println("Coins used to make " + amount + ":");
+        for (int coin : coinsUsed) {
+            System.out.print(coin + " ");
+        }
     }
 }

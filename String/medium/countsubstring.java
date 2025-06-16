@@ -1,4 +1,4 @@
-package Greedy;
+package String.medium;
 
 public class countsubstring {
     public static int countSubstring(String s) {
