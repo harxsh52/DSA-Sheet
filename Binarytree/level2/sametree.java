@@ -1,4 +1,4 @@
-package Binarytree.level1;
+package Binarytree.level2;
 
 public class sametree {
     public class TreeNode {
