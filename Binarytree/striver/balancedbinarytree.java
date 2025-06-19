@@ -10,7 +10,7 @@ public class balancedbinarytree {
             right=left=null;
         }
     }
-    public boolean isBalanced(TreeNode root) {
+    public static boolean isBalanced(TreeNode root) {
         if (root == null) return true;
 
         int l = height(root.left);
@@ -19,7 +19,7 @@ public class balancedbinarytree {
         return Math.abs(l - r) <= 1 && isBalanced(root.left) && isBalanced(root.right);
     }
 
-    public int height(TreeNode root) {
+    public static int height(TreeNode root) {
         if (root == null) return 0;
         int lh = height(root.left);
         int rh = height(root.right);
