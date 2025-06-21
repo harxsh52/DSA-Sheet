@@ -2,6 +2,7 @@ package binarysearchtree;
 import java.util.*;
 
 public class binarysearchtree {
+    //class for node
     static class Node{
         int data;
         Node left;
@@ -90,6 +91,7 @@ public class binarysearchtree {
         return root;
     }
 
+    //print in range
     public static void printInRange(Node root,int k1,int k2){
         if(root==null)return;
         if(root.data>=k1 && root.data<=k2){
@@ -132,8 +134,35 @@ private static void printPath(List<Integer> path) {
     }
     System.out.println();
 }
+    //Validate BST{approach 1}
+    public static boolean validate(Node root){
+        if(root==null)return false;
+        result=new ArrayList<>();
+        inorder(root);
+        for(int i=1;i<result.size();i++){
+            if(result.get(i-1)>result.get(i)){
+                return false;
+            }
+        }
+        return true;
+    }
 
-    //function calling
+    //validate BST 2
+    public static boolean isValidBST(Node root,Node min,Node max){
+        if(root==null){
+            return true;
+        }
+        if(min!=null && root.data<=min.data){
+            return false;
+        }else if(max!=null && root.data>=max.data){
+            return false;
+        }
+
+        return isValidBST(root.left, min, root) && isValidBST(root.right, root, max);
+    }
+
+
+    //function calling 
     public static void main(String[] args) {
         //creating node
         int[] arr={50, 30, 70, 20, 40, 60, 80, 10, 25, 35, 45, 55, 65, 75, 90};
@@ -169,6 +198,13 @@ private static void printPath(List<Integer> path) {
         //printroottoleaf
         List<Integer> path=new ArrayList<>();
         printRootToLeafPaths(root);
+
+        //check it is validate
+        boolean qq=validate(root);
+        System.out.println(qq);
+
+        //check it is valid
+        System.out.println(isValidBST(root, null, null));
     }
 
 }
