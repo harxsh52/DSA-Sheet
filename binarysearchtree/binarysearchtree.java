@@ -1,7 +1,7 @@
 package binarysearchtree;
 import java.util.*;
 
-public class create_binarytree {
+public class binarysearchtree {
     static class Node{
         int data;
         Node left;
@@ -11,7 +11,10 @@ public class create_binarytree {
             left=right=null;
         }
     }
+    //Gobally declared list
     private static List<Integer> result;
+
+    //print inorder 
     public static void inorder(Node root){
         if(root==null){
             return;
@@ -21,6 +24,8 @@ public class create_binarytree {
         inorder(root.right);
 
     }
+
+    //creating binary search tree
     public static Node insert(Node root,int val){
         if(root==null){
             root=new Node(val);
@@ -33,6 +38,25 @@ public class create_binarytree {
         }
         return root;
     }
+
+    //searching in a BST
+    public static boolean search(Node root, int key) {
+    if (root == null) {
+        return false;
+    }
+    if (root.data == key) {
+        return true;
+    }
+    if (key < root.data) {
+        return search(root.left, key);  // go left
+    } else {
+        return search(root.right, key); // go right
+    }
+}
+
+//delete a node
+
+    //function calling
     public static void main(String[] args) {
         int[] arr={5,1,3,4,2,7};
         Node root=null;
@@ -46,5 +70,9 @@ public class create_binarytree {
         }
         System.out.println("");
 
+        boolean q=search(root, 9);
+        System.out.println(q);
+
     }
+
 }
