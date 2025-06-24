@@ -16,9 +16,7 @@ public class secondlargest {
                 second = num;
             }
         }
-        if(second!=Integer.MIN_VALUE){
-            return second;
-        }
-        return -1;
+
+        return second!=Integer.MIN_VALUE ? second:-1;
     }
 }
