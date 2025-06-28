@@ -1,6 +1,7 @@
 package Array.easy;
 
-public class largestnumber {
+public class LargestNumber {
+    // to find the largest number in a array without sorting
     public int largestElement(int[] nums) {
         int max = Integer.MIN_VALUE;
         for(int i=0;i<nums.length;i++){

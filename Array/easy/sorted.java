@@ -1,7 +1,6 @@
 package Array.easy;
 
-public class sorted {
-    class Solution {
+public class Sorted {
     public boolean check(int[] nums) {
         int t=0;
         for(int i=0;i<nums.length;i++){
@@ -14,5 +13,4 @@ public class sorted {
         }
         return true;
     }
-}
 }
