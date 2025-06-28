@@ -1,8 +1,8 @@
-package Array.easy;
+
 
 import java.util.HashSet;
 
-public class union {
+public class Union {
     public int[] unionArray(int[] nums1, int[] nums2) {
         HashSet<Integer> set = new HashSet<>();
 
@@ -23,4 +23,12 @@ public class union {
 
         return result;
     }
-}
+    public static void main(String[] args) {
+        int[] nums1 = {1, 2, 3};
+        int[] nums2 = {2, 3, 4};
+        union u = new union();
+        int[] result = u.unionArray(nums1, nums2);
+        for (int num : result) {
+            System.out.print(num + " ");        
+    }
+}}

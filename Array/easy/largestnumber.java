@@ -1,4 +1,3 @@
-package Array.easy;
 
 public class LargestNumber {
     // to find the largest number in a array without sorting

@@ -1,4 +1,4 @@
-package Array.easy;
+
 
 public class missingnumber {
     public int missingNumber(int[] nums) {

@@ -1,6 +1,6 @@
-package Array.easy;
 
-import java.awt.datatransfer.SystemFlavorMap;
+
+// Given an array of integers, find the second largest element in the array.
 
 public class SecondLargest {
      public static int getSecondLargest(int[] arr) {
