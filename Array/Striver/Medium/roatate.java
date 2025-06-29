@@ -1,4 +1,4 @@
-package Array.Medium;
+package Array.Striver.Medium;
 
 public class roatate {
     public void rotate(int[][] matrix) {

@@ -1,4 +1,4 @@
-package Array.Medium;
+package Array.Striver.Medium;
 
 public class next_permutation {
         public void nextPermutation(int[] nums) {

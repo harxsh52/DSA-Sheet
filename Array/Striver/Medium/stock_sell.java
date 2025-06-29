@@ -1,4 +1,4 @@
-package Array.Medium;
+package Array.Striver.Medium;
 
 public class stock_sell {
     public int maxProfit(int[] prices) {

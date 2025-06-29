@@ -1,4 +1,4 @@
-package Array.Medium;
+package Array.Striver.Medium;
 
 public class subarraysum {
 public int maxSubArray(int[] nums) {

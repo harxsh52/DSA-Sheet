@@ -1,4 +1,4 @@
-package Array.Medium;
+package Array.Striver.Medium;
 
 public class sortcolor {
      public void sortColors(int[] nums) {

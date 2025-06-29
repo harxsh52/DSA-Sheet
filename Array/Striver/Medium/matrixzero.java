@@ -1,4 +1,4 @@
-package Array.Medium;
+package Array.Striver.Medium;
 
 public class matrixzero {
     public void setZeroes(int[][] matrix) {

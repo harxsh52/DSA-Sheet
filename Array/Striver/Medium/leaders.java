@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class leaders {
-    public static ArrayList<Integer> leaders(int[] nums) {
+    public static ArrayList<Integer> leader(int[] nums) {
         ArrayList<Integer> leader = new ArrayList<>();
         int max = Integer.MIN_VALUE;
 
@@ -21,7 +21,7 @@ public class leaders {
         return leader;
     }    public static void main(String[] args) {
         int[] nums = {16, 17, 4, 3, 5, 2};
-        ArrayList<Integer> result =leaders(nums);
+        ArrayList<Integer> result =leader(nums);
         System.out.println(result); // Output: [17, 5, 2]
 }
 }

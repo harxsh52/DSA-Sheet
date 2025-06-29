@@ -1,4 +1,4 @@
-package Array.Hard;
+package Array.Striver.Hard;
 
 import java.util.Arrays;
 
