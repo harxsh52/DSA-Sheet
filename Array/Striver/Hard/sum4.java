@@ -1,4 +1,4 @@
-package Array.hard;
+package Array.Hard;
 import java.util.*;
 
 public class sum4 {

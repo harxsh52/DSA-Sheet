@@ -1,4 +1,4 @@
-package Array.medium;
+package Array.Medium;
 
 public class matrixzero {
     public void setZeroes(int[][] matrix) {

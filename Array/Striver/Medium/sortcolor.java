@@ -1,4 +1,4 @@
-package Array.medium;
+package Array.Medium;
 
 public class sortcolor {
      public void sortColors(int[] nums) {

@@ -1,4 +1,4 @@
-package Array.medium;
+package Array.Striver.Medium;
 import java.util.*;
 
 public class  _conslong {

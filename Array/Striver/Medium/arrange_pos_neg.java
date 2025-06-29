@@ -1,4 +1,4 @@
-package Array.medium;
+package Array.Striver.Medium;
 
 public class arrange_pos_neg {
     public int[] rearrangeArray(int[] nums) {

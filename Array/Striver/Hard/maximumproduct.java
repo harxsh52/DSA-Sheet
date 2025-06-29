@@ -1,4 +1,4 @@
-package Array.hard;
+package Array.Striver.Hard;
 
 public class maximumproduct {
     public int maxProduct(int[] nums) {

@@ -1,4 +1,4 @@
-package Array.medium;
+package Array.Medium;
 
 public class stock_sell {
     public int maxProfit(int[] prices) {

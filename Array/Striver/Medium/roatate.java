@@ -1,4 +1,4 @@
-package Array.medium;
+package Array.Medium;
 
 public class roatate {
     public void rotate(int[][] matrix) {

@@ -2,7 +2,7 @@
 
 import java.util.HashSet;
 
-public class Union {
+public class union {
     public int[] unionArray(int[] nums1, int[] nums2) {
         HashSet<Integer> set = new HashSet<>();
 
