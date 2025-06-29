@@ -3,7 +3,7 @@ package Array.Striver.Hard;
 import java.util.Arrays;
 
 public class repeat_missing {
-    public int[] findMissingRepeatingNumbers(int[] nums) {
+public int[] findMissingRepeatingNumbers(int[] nums) {
         Arrays.sort(nums);
         int m=0;
         int r=0;
