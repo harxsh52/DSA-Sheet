@@ -1,4 +1,4 @@
-package LInkedlist.hard;
+package LinkedList.hard;
 
 public class k_revese {
     class ListNode {

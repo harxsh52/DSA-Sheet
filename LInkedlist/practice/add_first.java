@@ -1,4 +1,4 @@
-package LInkedlist.practice;
+package LinkedList.practice;
 //Declared class
 public class add_first {
     public static class Node{

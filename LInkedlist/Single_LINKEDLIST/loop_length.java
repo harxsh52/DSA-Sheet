@@ -1,4 +1,4 @@
-package LInkedlist.Single_LINKEDLIST;
+package LinkedList.Single_LINKEDLIST;
 
 public class loop_length {
     public static class ListNode{

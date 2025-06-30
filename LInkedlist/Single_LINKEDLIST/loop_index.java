@@ -1,6 +1,6 @@
-package LInkedlist.Single_LINKEDLIST;
+package LinkedList.Single_LINKEDLIST;
 
-import LInkedlist.Single_LINKEDLIST.loop.ListNode;
+import LinkedList.Single_LINKEDLIST.loop.ListNode;
 public class ListNode {
     int val;
     ListNode next;

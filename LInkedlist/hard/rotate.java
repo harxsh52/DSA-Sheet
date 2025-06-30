@@ -1,4 +1,4 @@
-package LInkedlist.hard;
+package LinkedList.hard;
 
 public class rotate {
     public ListNode rotateRight(ListNode head, int k) {

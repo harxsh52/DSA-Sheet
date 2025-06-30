@@ -1,4 +1,4 @@
-package LInkedlist.practice;
+package LinkedList.practice;
 
 public class practice {
 
