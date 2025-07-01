@@ -1,7 +1,7 @@
 package Recursion.medium;
 
-public class subsequence_k {
-private static int count;
+public class no_subsequence {
+    private static int count;
     public int countSubsequenceWithTargetSum(int[] nums, int k) {
         count=0;
         genrate(nums,k,0);
