@@ -1,16 +1,17 @@
 package binarysearch.easy;
 
 public class lowerbound {
-    public int lowerBound(int[] nums, int x) {
-       int left=0,right=nums.length-1;
-       while(left<right){
-        int mid=left+(right-left)/2;
-        if(nums[mid]<x){
-            left=mid+1;
-        }else{
-            right=mid;
+    public int lowerBound(int[] arr, int target) {
+       int low=0,high=arr.length-1,ans=arr.length;
+        while(low<=high){
+            int mid=low+(high-low)/2;
+            if(arr[mid]>=target){
+                high=mid-1;
+                ans=mid;
+            }else{
+                low=mid+1;
+            }
         }
-       }
-       return left;
+        return ans;
      }
 }
