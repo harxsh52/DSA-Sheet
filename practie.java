@@ -23,7 +23,7 @@ public static int check(int[] arr,int k){
             set.add(arr[i]);
             pair[0]=arr[i];
             pair[1]=i+1;
-            pairs.add(pair.clone());
+            pairs.add(new int[]{pair[0], pair[1]});
         }
     }
     Collections.sort(pairs, (a, b) -> Integer.compare(a[0], b[0]));
