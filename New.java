@@ -1,15 +1,10 @@
-// Java program to demonstrate 
-// keySet() with duplicate keys
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.*;
-
-public class string {
+public class New {
     public static List<Integer> search(String pat, String txt) {
         List<Integer> list=new ArrayList<>();
         int count=0;
         String sb=new String(pat);
-        while(sb.length()>=txt.length()){
+        while(sb.length()>txt.length()){
            int t=sb.indexOf(txt);
            if(t==-1){
             break;
@@ -23,8 +18,7 @@ public class string {
         }
         return list;
     }
-        
-    public static void main(String[] args) {
+     public static void main(String[] args) {
 
         // Creating an empty HashMap
         Scanner sc=new Scanner(System.in);
@@ -35,8 +29,7 @@ public class string {
 
         // Using keySet() to get the set view of keys;
         for(int val: m) {
-            System.out.print(val+" ");
+            System.out.println(val);
         }
-        sc.close();
     }
 }

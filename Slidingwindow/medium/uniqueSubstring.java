@@ -1,4 +1,4 @@
-package Slidingwindow;
+package Slidingwindow.medium;
 
 import java.util.HashSet;
 
