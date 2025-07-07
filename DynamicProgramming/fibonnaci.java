@@ -2,6 +2,15 @@ package DynamicProgramming;
 import java.util.*;
 import java.util.Arrays;;
 public class fibonnaci {
+    public static int fib(int n){
+        Arrays.fill(dp, -1);
+        dp[0]= 0;
+        dp[1]= 1;
+        for(int i=2;i<=n;i++){
+            dp[i] = dp[i-1] + dp[i-2];
+        }
+        return dp[n];
+    }
     static int[] dp = new int[100000];
     public static int fib(int n,int[] dp) {
     if (n <= 1) {
@@ -17,7 +26,7 @@ public class fibonnaci {
             Arrays.fill(dp, -1);
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int th = fib(n, dp);
+        int th = fib(n);
         System.out.println(th);
         sc.close();
     }
