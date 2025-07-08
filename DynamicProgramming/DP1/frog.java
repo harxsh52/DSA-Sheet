@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package DynamicProgramming.DP1;
 
 import java.util.Arrays;
 
@@ -39,13 +39,42 @@ public class frog {
   for(int ind=1;ind<n;ind++){
       int jumpTwo = Integer.MAX_VALUE;
         int jumpOne= dp[ind-1] + Math.abs(heights[ind]-heights[ind-1]);
-        if(ind>1)
+        if(ind>1){
             jumpTwo = dp[ind-2] + Math.abs(heights[ind]-heights[ind-2]);
-    
+        }
         dp[ind]=Math.min(jumpOne, jumpTwo);
 
     }
-    return dp[n-1];
-    //space optimization
-    
-}}
+    return dp[n-1];}
+    //recursion
+    public static  int frogJump(int[] height,int n){
+        if(n==0){
+            return 0;
+        }
+        int left=frogJump(height,n-1)+Math.abs(height[n]-height[n-1]);
+        int right=Integer.MAX_VALUE;
+        if(n>1){
+        right=frogJump(height,n-2)+Math.abs(height[n]-height[n-2]);
+        }
+        return Math.min(left,right);
+        }
+    //Space Optimised
+    public static int frogjump(int[] height){
+        int prev1 = 0, prev2 = 0;
+
+    for (int i = 1; i < height.length; i++) {
+        int jumpOne = prev1 + Math.abs(height[i] - height[i - 1]);
+        int jumpTwo = Integer.MAX_VALUE;
+
+        if (i > 1) {
+            jumpTwo = prev2 + Math.abs(height[i] - height[i - 2]);
+        }
+
+        int curr = Math.min(jumpOne, jumpTwo);
+        prev2 = prev1;
+        prev1 = curr;
+    }
+
+    return prev1;
+    }
+}

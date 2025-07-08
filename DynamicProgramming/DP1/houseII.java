@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package DynamicProgramming.DP1;
 
 public class houseII {
     public int rob(int[] nums) {

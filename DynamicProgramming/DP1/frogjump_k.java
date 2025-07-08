@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package DynamicProgramming.DP1;
 
 public class frogjump_k{
     public int correctFrogJump(int[] heights, int k) {
