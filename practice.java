@@ -27,5 +27,6 @@ public class practice {
         System.out.println("The second largest element is: " + secondLargest);
         sc.close();
     }
-    
-}
+
+
+     }
