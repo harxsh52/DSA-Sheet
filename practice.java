@@ -15,6 +15,34 @@ public class practice {
         }
         return second==Integer.MIN_VALUE? -1 : second;
     }
+    public static int perfectSum(int[] num, int k) {
+        int n = num.length;
+
+        int[][] dp = new int[n][k + 1];
+
+        for (int i = 0; i < n; i++) {
+            dp[i][0] = 1;
+        }
+
+        if (num[0] <= k) {
+            dp[0][num[0]]+=1;
+        }
+
+        for (int ind = 1; ind < n; ind++) {
+            for (int target = 1; target <= k; target++) {
+                int notTaken = dp[ind - 1][target];
+
+                int taken = 0;
+                if (num[ind] <= target) {
+                    taken = dp[ind - 1][target - num[ind]];
+                }
+
+                dp[ind][target] = notTaken + taken;
+            }
+        }
+
+        return dp[n - 1][k];
+    }
     public static void main(String[] args) {
         // This is a simple Java program
         Scanner sc=new Scanner(System.in);
@@ -24,7 +52,8 @@ public class practice {
             arr[i]=sc.nextInt();
         }
         int secondLargest =secondLargest(arr);
-        System.out.println("The second largest element is: " + secondLargest);
+        int result=perfectSum(arr, 24);
+        System.out.println(result);
         sc.close();
     }
 

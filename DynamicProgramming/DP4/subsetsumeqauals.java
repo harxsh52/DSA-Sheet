@@ -7,6 +7,7 @@ public class subsetsumeqauals {
         for(int i=0;i<arr.length;i++){
             dp[i][0]=true;
         }
+        
         if(arr[0]<=sum){
             dp[0][arr[0]]=true;
         }
