@@ -14,7 +14,7 @@ public class dfs {
     public static void main(String[] args) {
         int n = 6;
         int[][] edges = {
-            {0, 1}, {0, 2},{1,5}, {1, 3}, {3, 4},{3,5}, {2, 5}
+            {0, 1}, {0, 2},{1,5}, {1, 3}, {3, 4}, {2, 5},{3,5}
         };
         List<List<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < n; i++) {
