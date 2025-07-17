@@ -3,11 +3,7 @@
 import java.util.HashMap;
 
 public class long_subarray {
-    // Java program to find the length of the longest
-// subarray having sum k using nested loop
 
-  
-  	// Function to find longest sub-array having sum k
     public static int longestSubarray(int[] nums, int k) {
        int n=nums.length;
        HashMap<Integer,Integer> preSumMap=new HashMap<>();
