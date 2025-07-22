@@ -1,5 +1,4 @@
-// Java program to demonstrate 
-// keySet() with duplicate keys
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.*;
