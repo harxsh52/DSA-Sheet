@@ -51,7 +51,7 @@ public class practice {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        int secondLargest =secondLargest(arr);
+        int secondlargest =secondLargest(arr);
         int result=perfectSum(arr, 24);
         System.out.println(result);
         sc.close();
