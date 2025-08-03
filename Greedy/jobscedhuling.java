@@ -25,7 +25,7 @@ public class jobscedhuling {
         // Step 2: Sort by profit in descending order
         Arrays.sort(jobArr, (a, b) -> b.profit - a.profit);
 
-        // Step 3: Find max deadline to create time slots
+
         int maxDeadline = 0;
         for (Job job : jobArr) {
             maxDeadline = Math.max(maxDeadline, job.deadline);
